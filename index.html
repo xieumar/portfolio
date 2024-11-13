@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♡ Zee's Portfolio ♡</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7d12dbc7b2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+   <link rel="icon" href="favicon.ico">
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/girl.png" alt="logo" class="main-logo" >
+            </div>
+            <i class="fa-solid fa-bars" id="nav-icon" onclick="openNav()"></i>
+            <div class="overlay" id="myNav">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div class="nav-links overlay-content">
+                    <a href="#home" onclick="closeNav()">Home</a>
+                    <a href="#about" onclick="closeNav()">About</a>
+                    <a href="#projects" onclick="closeNav()">Projects</a>
+                    <a href="#contact" onclick="closeNav()">Contact</a> 
+                </div>
+            </div>
+             
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Hi. I'm <br> <span>Zainab</span> </h1>
+            <p>A developer,computer <br id="home-br">engineer and modiste</p>
+
+            <div class="home-icons">
+                <a href="https://x.com/Xiaoma0_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://codepen.io/Zeeumar" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+                <a href="https://www.linkedin.com/in/zainab-ibrahim-48929b1ba/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="images/home-img.png" alt="" id="home-img">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About</h2>
+        
+        <div class="about-row " id="about-row">
+            <div class="about-img">
+                <img src="images/Working from anywhere-bro.png" alt="">
+            </div>
+            <div class="about-text">
+                <p>I’m a computer engineering student interested in web development.I’m all about building practical, efficient solutions, whether it’s for tech, engineering, or anything that lets me dive into hands-on projects. Basically, if it involves problem-solving and a dash of creativity, I’m in! </p>
+                <br>
+                <p>When I’m not coding, you’ll probably find me baking up something sweet, sewing my own clothes, or lost in a good book. These hobbies keep me creative and always learning—whether it’s testing a new recipe, designing a piece, or exploring different worlds through reading.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        
+        <div class="projects-container">
+            <div class="projects-card projects-card-3">
+                <a href="https://xieumar.github.io/weather-app/" target="_blank">
+                    <img src="images/Weather-pana.png" alt="">
+                    <p class="projects-card-text projects-card-text-3" id="projects-card-text">Weather App</p>
+                </a>
+            </div>
+            <div class="projects-card projects-card-2">
+                <a href="https://xieumar.github.io/password-generator/" target="_blank">
+                    <img src="images/My password-amico.png" alt="">
+                    <p class="projects-card-text projects-card-text-2" id="projects-card-text">Password Generator</p>
+                </a>
+            </div>
+            <div class="projects-card projects-card-1">
+                <a href="https://xieumar.github.io/to-do-list/" target="_blank"> 
+                  <img src="images/Checklist-pana.png" alt=""> 
+                  <p class="projects-card-text projects-card-text-1" id="projects-card-text">To-do List</p>
+                 
+              </a>
+              </div>
+            
+        </div>
+
+        <button class="btn project-btn" id="project-btn">
+            <a href="https://codepen.io/Zeeumar" target="_blank">More projects &rarr;</a>
+        </button>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>contact me</h2>
+        <p class="contact-subtext">Interested in working together? We should get in touch</p>
+
+        <div class="contact-container">
+           <form action="#">
+                <label for="email" id="email-label">E-mail <br> 
+                    <input id="email" type="email" placeholder="eg: marthameow@yahoo.com" required/>
+                </label> 
+                <label for="textarea">Message <br>
+                    <textarea id="textarea" rows="5" placeholder="Write your message here"></textarea>
+                </label>
+
+                <button class="btn contact-btn">
+                    <a href="#" onclick="submitBtn()">Submit</a>
+                </button>
+           </form>
+        </div>
+    
+    </section>
+
+    <footer>
+        <div class="footer-text footer-text-1">
+            <p>Evolving, improving, becoming better with every experience.</p>
+        </div>
+        <div class="footer-icons">
+            <a href="https://x.com/Xiaoma0_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://codepen.io/Zeeumar" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+            <a href="https://www.linkedin.com/in/zainab-ibrahim-48929b1ba/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-text footer-text-2">
+            <p>&#169;2024. Zainab Umar Ibrahim</p>
+        </div>
+    </footer>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
